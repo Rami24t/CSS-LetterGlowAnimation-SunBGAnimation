@@ -1,10 +1,39 @@
+html:root {
+  --glow-color: #ffe867;
+  --off-color: #ffffff;
+  --on-color: rgb(255, 245, 152);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #262626;
+  background-color: #080813;
+  user-select: none;
+  width: 100%;
+  background-image: radial-gradient(
+    orangered,
+    orange,
+    #06060e,
+    #06060e,
+    #080813,
+    #080813,
+    #080813,
+    #080813,
+    #080813,
+    #080813
+  );
+  background-size: 40vmin 40vmin;
+  background-repeat: no-repeat;
+  background-position: top -40vmin right -40vmin;
+  animation: move1 40s 1s 1 both;
+}
+@keyframes move1 {
+  to {
+    background-position: bottom 20vh left -40vmin;
+  }
 }
 .container {
   display: grid;
@@ -14,93 +43,105 @@ body {
 }
 .title {
   font-family: "Lato", sans-serif;
-  font-size: 80px;
+  font-size: 9vmin;
   text-transform: uppercase;
-  color: #484848;
+  color: var(--off-color);
+  letter-spacing: 1.6vw;
+  cursor: pointer;
 }
 
 .title-letter {
-  animation: color-animation 1s linear 1s 2;
+  animation: color-animation 1s ease-in-out 1s infinite,
+    text-shadow1 1s ease-in-out calc(var(--delay1) - 0.001ms) infinite;
+  animation-fill-mode: forwards;
 }
 .title-letter-1 {
-  --color-1: #fff900;
-  --color-2: #484848;
-  --color-3: #484848;
-  --color-4: #484848;
-  --color-5: #484848;
-  --color-6: #484848;
-  --color-7: #484848;
-  --color-8: #484848;
+  --color-1: var(--on-color);
+  --color-2: var(--off-color);
+  --color-3: var(--off-color);
+  --color-4: var(--off-color);
+  --color-5: var(--off-color);
+  --color-6: var(--off-color);
+  --color-7: var(--off-color);
+  --color-8: var(--off-color);
+  --delay1: 1s;
 }
 .title-letter-2 {
-  --color-1: #484848;
-  --color-2: #fff900;
-  --color-3: #484848;
-  --color-4: #484848;
-  --color-5: #484848;
-  --color-6: #484848;
-  --color-7: #484848;
-  --color-8: #484848;
+  --color-1: var(--off-color);
+  --color-2: var(--on-color);
+  --color-3: var(--off-color);
+  --color-4: var(--off-color);
+  --color-5: var(--off-color);
+  --color-6: var(--off-color);
+  --color-7: var(--off-color);
+  --color-8: var(--off-color);
+  --delay1: calc(1s + 1s / 10);
 }
 .title-letter-3 {
-  --color-1: #484848;
-  --color-2: #484848;
-  --color-3: #fff900;
-  --color-4: #484848;
-  --color-5: #484848;
-  --color-6: #484848;
-  --color-7: #484848;
-  --color-8: #484848;
+  --color-1: var(--off-color);
+  --color-2: var(--off-color);
+  --color-3: var(--on-color);
+  --color-4: var(--off-color);
+  --color-5: var(--off-color);
+  --color-6: var(--off-color);
+  --color-7: var(--off-color);
+  --color-8: var(--off-color);
+  --delay1: calc(1s + 2s * (1 / 10));
 }
 .title-letter-4 {
-  --color-1: #484848;
-  --color-2: #484848;
-  --color-3: #484848;
-  --color-4: #fff900;
-  --color-5: #484848;
-  --color-6: #484848;
-  --color-7: #484848;
-  --color-8: #484848;
+  --color-1: var(--off-color);
+  --color-2: var(--off-color);
+  --color-3: var(--off-color);
+  --color-4: var(--on-color);
+  --color-5: var(--off-color);
+  --color-6: var(--off-color);
+  --color-7: var(--off-color);
+  --color-8: var(--off-color);
+  --delay1: calc(1s + 3s * (1 / 10));
 }
 .title-letter-5 {
-  --color-1: #484848;
-  --color-2: #484848;
-  --color-3: #484848;
-  --color-4: #484848;
-  --color-5: #fff900;
-  --color-6: #484848;
-  --color-7: #484848;
-  --color-8: #484848;
+  --color-1: var(--off-color);
+  --color-2: var(--off-color);
+  --color-3: var(--off-color);
+  --color-4: var(--off-color);
+  --color-5: var(--on-color);
+  --color-6: var(--off-color);
+  --color-7: var(--off-color);
+  --color-8: var(--off-color);
+  --delay1: calc(1s + 4s * (1 / 10));
 }
 .title-letter-6 {
-  --color-1: #484848;
-  --color-2: #484848;
-  --color-3: #484848;
-  --color-4: #484848;
-  --color-5: #484848;
-  --color-6: #fff900;
-  --color-7: #484848;
-  --color-8: #484848;
+  --color-1: var(--off-color);
+  --color-2: var(--off-color);
+  --color-3: var(--off-color);
+  --color-4: var(--off-color);
+  --color-5: var(--off-color);
+  --color-6: var(--on-color);
+  --color-7: var(--off-color);
+  --color-8: var(--off-color);
+  --delay1: calc(1s + 5s * (1 / 10));
 }
 .title-letter-7 {
-  --color-1: #484848;
-  --color-2: #484848;
-  --color-3: #484848;
-  --color-4: #484848;
-  --color-5: #484848;
-  --color-6: #484848;
-  --color-7: #fff900;
-  --color-8: #484848;
+  --color-1: var(--off-color);
+  --color-2: var(--off-color);
+  --color-3: var(--off-color);
+  --color-4: var(--off-color);
+  --color-5: var(--off-color);
+  --color-6: var(--off-color);
+  --color-7: var(--on-color);
+  --color-8: var(--off-color);
+  --delay1: calc(1s + 6s * (1 / 10));
 }
 .title-letter-8 {
-  --color-1: #484848;
-  --color-2: #484848;
-  --color-3: #484848;
-  --color-4: #484848;
-  --color-5: #484848;
-  --color-6: #484848;
-  --color-7: #484848;
-  --color-8: #fff900;
+  --color-1: var(--off-color);
+  --color-2: var(--off-color);
+  --color-3: var(--off-color);
+  --color-4: var(--off-color);
+  --color-5: var(--off-color);
+  --color-6: var(--off-color);
+  --color-7: var(--off-color);
+  --color-8: var(--on-color);
+  --delay1: calc(1s + 7s * (1 / 10));
 }
 
 @keyframes color-animation {
@@ -129,6 +170,44 @@ body {
     color: var(--color-8);
   }
   100% {
-    color: #484848;
+    color: var(--off-color);
   }
 }
+@keyframes text-shadow1 {
+  0% {
+    text-shadow: 4px 4px 3px #ff6c00, var(--glow-color) -2px -3px 2px,
+      0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--glow-color),
+      0 0 40px var(--glow-color), 0 0 50px var(--glow-color),
+      0 0 60px var(--glow-color), 0 0 70px var(--glow-color);
+  }
+  12.5%,
+  25%,
+  37.5%,
+  50%,
+  62.5%,
+  75%,
+  87.5%,
+  100% {
+  }
+}
+
+.attribution {
+  font-size: 1.5vmin;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+  left: 0;
+  right: 0%;
+  color: #ffffff00;
+  text-shadow: 0vw 0vh 0.25vmin #bae6ff;
+  transform: rotateY(50deg) scaleY(1.1);
+}
+.attribution a {
+  display: block;
+  font-size: 2vmin;
+  color: hsla(58, 100%, 85%, 0);
+  text-shadow: 0vw 0vh 0.35vmin #dbf2ff;
+  text-decoration: none;
+}
+
+/* June 1 2022 Rami Al-Saadi Copyrights Reserved */

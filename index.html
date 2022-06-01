@@ -11,20 +11,39 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>LIGHTING TEXT ANIMATION CSS</title>
+    <title>GLOWING STARLETS LETTERS ANIMATION CSS</title>
   </head>
   <body>
-    <div class="container">
+    <audio
+      id="audio1"
+      autoplay
+      preload="auto"
+      loop
+      src="./Audio/laser-cannon-science-fiction-sound-9831(1).mp3"
+      controls
+      style="position: absolute; display: none"
+    ></audio>
+    <div
+      class="container"
+      onclick="document.getElementById('audio1').paused ?  document.getElementById('audio1').play() : document.getElementById('audio1').pause();    document.getElementById('audio1').volume = (Math.random()/2);"
+      onmouseover="document.getElementById('audio1').volume = (Math.random()/2);"
+    >
       <h1 class="title">
-        <span class="title-letter title-letter-1">L</span>
-        <span class="title-letter title-letter-2">I</span>
-        <span class="title-letter title-letter-3">G</span>
-        <span class="title-letter title-letter-4">H</span>
-        <span class="title-letter title-letter-5">T</span>
-        <span class="title-letter title-letter-6">I</span>
-        <span class="title-letter title-letter-7">N</span>
-        <span class="title-letter title-letter-8">G</span>
+        <span class="title-letter title-letter-1">S</span>
+        <span class="title-letter title-letter-2">t</span>
+        <span class="title-letter title-letter-3">a</span>
+        <span class="title-letter title-letter-4">r</span>
+        <span class="title-letter title-letter-5">l</span>
+        <span class="title-letter title-letter-6">e</span>
+        <span class="title-letter title-letter-7">t</span>
+        <span class="title-letter title-letter-8">s</span>
       </h1>
     </div>
+    <footer>
+      <div class="attribution">
+        Designed and coded by
+        <a href="https://github.com/Rami24t" target="_blank">Rami Al-Saadi</a>
+      </div>
+    </footer>
   </body>
 </html>

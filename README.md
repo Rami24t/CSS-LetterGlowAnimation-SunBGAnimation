@@ -1,13 +1,17 @@
-# Light Me Up
+Live Version:
 
-Let's try to recreate the lighting animation shown below:
-
-![example](img/mockup.gif)
+- (Fully responsive design)
 
 ## Objectives / Info
 
-- You'll need to use `@keyframes` and create a custom animation.
-- `text-shadow` and `animation-delay` might be useful for this.
-- Reference the [Style Guide](style-guide.md) for fonts, colors, etc...
-- Try to make it as close to the example as possible.
-- Have fun 🐱‍🚀
+- Make an artistic letter by letter CSS animations of the word 'Starlets'.
+
+- Add my animated background of a moving sun in space
+
+- Fully responsive design
+
+- Add sound effects on mouse click and then on mouse over and mouse movements (using javascript and html and css)
+
+- Use the 'Lato' google font
+
+- Add link to my git-hub
