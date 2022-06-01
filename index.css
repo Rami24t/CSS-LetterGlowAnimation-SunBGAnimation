@@ -1,13 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #262626;
-  font-size: 80px;
+}
+.container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.title {
   font-family: "Lato", sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #484848;
 }
 
 .title-letter {
-  animation: color-animation 1s linear infinite;
+  animation: color-animation 1s linear 1s 2;
 }
-
 .title-letter-1 {
   --color-1: #fff900;
   --color-2: #484848;
@@ -18,7 +32,6 @@ body {
   --color-7: #484848;
   --color-8: #484848;
 }
-
 .title-letter-2 {
   --color-1: #484848;
   --color-2: #fff900;
@@ -29,7 +42,6 @@ body {
   --color-7: #484848;
   --color-8: #484848;
 }
-
 .title-letter-3 {
   --color-1: #484848;
   --color-2: #484848;
@@ -40,7 +52,6 @@ body {
   --color-7: #484848;
   --color-8: #484848;
 }
-
 .title-letter-4 {
   --color-1: #484848;
   --color-2: #484848;
@@ -96,38 +107,28 @@ body {
   0% {
     color: var(--color-1);
   }
-  14.28% {
+  12.5% {
     color: var(--color-2);
   }
-  28.57% {
+  25% {
     color: var(--color-3);
   }
-  42.86% {
+  37.5% {
     color: var(--color-4);
   }
-  57.14% {
+  50% {
     color: var(--color-5);
   }
-  71.42% {
+  62.5% {
     color: var(--color-6);
   }
-  85.7% {
+  75% {
     color: var(--color-7);
   }
-  100% {
+  87.5% {
     color: var(--color-8);
   }
-}
-
-.container {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  height: 100vh;
-}
-
-.title {
-  font-family: "Lato", sans-serif;
-  font-size: 80px;
-  text-transform: uppercase;
+  100% {
+    color: #484848;
+  }
 }
