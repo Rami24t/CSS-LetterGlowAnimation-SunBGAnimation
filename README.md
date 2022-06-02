@@ -1,6 +1,6 @@
-# STARLETS
+# STARLETS Artistic Webpage/Header/Title
 
-## Art - Nightsky - Letter Glow Animation + Star/Nightsky BG-Animation - Random Sounds Generation
+### CSS/HTML - Nightsky - Letter Glow Animation + Star/Nightsky BG-Animation - Random Sounds Generation (using Javascript)
 
 Live Version: https://rami24t.github.io/CSS-LetterGlowAnimation-SunBGAnimation/
 
