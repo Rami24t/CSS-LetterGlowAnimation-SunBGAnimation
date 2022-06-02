@@ -1,4 +1,4 @@
-# STARLETS Artistic Webpage/Header/Title
+# STARLETS Artistic Webpage/Header
 
 ### CSS/HTML - Nightsky - Letter Glow Animation + Star/Nightsky BG-Animation - Random Sounds Generation (using Javascript)
 
