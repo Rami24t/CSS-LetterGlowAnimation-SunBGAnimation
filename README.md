@@ -6,14 +6,14 @@ Live Version: https://rami24t.github.io/CSS-LetterGlowAnimation-SunBGAnimation/
 
 - Make an artistic letter by letter CSS animations of the word 'Starlets'.
 
-- Add my animated background of a moving sun in space
+- Add my animated background of a moving sun in space.
 
-- Fully responsive design
+- Fully responsive design.
 
-- Add sound effects on mouse click and then on mouse over and mouse movements (using javascript and html and css)
+- Add sounds and sound effects when user clicks on letters and then moves the mouse on them.
 
-- Use the 'Lato' google font
+- Use the 'Lato' google font.
 
-- Add link to my git-hub
+- Add link to my git-hub.
 
-- Add BG Art/Animation
+- Add BG Art/Animation.
