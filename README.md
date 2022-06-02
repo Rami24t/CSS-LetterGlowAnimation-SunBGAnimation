@@ -1,6 +1,6 @@
 # STARLETS
 
-## CSS Art - Nightsky - Letter Glow Animation + Star/Nightsky BG-Animation - Random Sounds Generation
+## Art - Nightsky - Letter Glow Animation + Star/Nightsky BG-Animation - Random Sounds Generation
 
 Live Version: https://rami24t.github.io/CSS-LetterGlowAnimation-SunBGAnimation/
 
