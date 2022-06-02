@@ -14,8 +14,9 @@ body {
   user-select: none;
   width: 100%;
 }
+
 .container::before {
-  content: "";
+  content: "Rami";
   height: 100vh;
   position: absolute;
   top: 0;
@@ -31,13 +32,9 @@ body {
   z-index: -99;
   background-size: 200% 200%;
   background-position: bottom -100vh left -100vw;
-  animation: move1 26.6s alternate-reverse 1;
+  animation: move1 40s alternate-reverse 1 both;
 }
-@keyframes move1 {
-  to {
-    background-position: bottom 20vh left -40vmin;
-  }
-}
+
 .container {
   display: grid;
   place-items: center;
@@ -58,7 +55,7 @@ body {
   background-size: 40vmin 40vmin;
   background-repeat: no-repeat;
   background-position: top -40vmin right -40vmin;
-  animation: move1 40s 1s 1 both;
+  animation: move1 35s 19s 1 both;
 }
 .title {
   font-family: "Lato", sans-serif;
@@ -213,13 +210,14 @@ body {
 .attribution {
   font-size: 1.5vmin;
   text-align: center;
-  position: fixed;
-  bottom: 0%;
-  left: 0;
-  right: 0%;
+  position: absolute;
+  bottom: 90vh;
+  left: 12vw;
   color: #ffffff00;
   text-shadow: 0vw 0vh 0.25vmin #bae6ff;
-  transform: rotateY(50deg) scaleY(1.1);
+  transform: rotateX(-5deg) rotateY(50deg) scaleY(1.1);
+  animation: move1 1s linear 1s infinite;
+  opacity: 0.8;
 }
 .attribution a {
   display: block;
@@ -227,6 +225,12 @@ body {
   color: hsla(58, 100%, 85%, 0);
   text-shadow: 0vw 0vh 0.35vmin #dbf2ff;
   text-decoration: none;
+}
+
+@keyframes move1 {
+  to {
+    background-position: bottom 20vh left -40vmin;
+  }
 }
 
 /* June 1 2022 - June 2 2022 * Rami Al-Saadi * All rights Reserved. */
