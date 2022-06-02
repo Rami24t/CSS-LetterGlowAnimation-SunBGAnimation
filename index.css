@@ -13,22 +13,25 @@ body {
   background-color: #080813;
   user-select: none;
   width: 100%;
-  background-image: radial-gradient(
-    orangered,
-    orange,
-    #06060e,
-    #06060e,
-    #080813,
-    #080813,
-    #080813,
-    #080813,
-    #080813,
-    #080813
-  );
-  background-size: 40vmin 40vmin;
-  background-repeat: no-repeat;
-  background-position: top -40vmin right -40vmin;
-  animation: move1 40s 1s 1 both;
+}
+.container::before {
+  content: "";
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.1;
+  background-image: url(./images/jake-weirick-Q_RBVFFXR_g-unsplash.jpg);
+  background-image: url("https://source.unsplash.com/2000x2000/?night sky");
+  background-position: cover;
+  background-repeat: repeat;
+  filter: blur(2px);
+  z-index: -99;
+  background-size: 200% 200%;
+  background-position: bottom -100vh left -100vw;
+  animation: move1 26.6s alternate-reverse 1;
 }
 @keyframes move1 {
   to {
@@ -40,13 +43,29 @@ body {
   place-items: center;
   text-align: center;
   height: 100vh;
+  background-image: radial-gradient(
+    orangered,
+    orange,
+    #06060e7e,
+    #06060e71,
+    #08081357,
+    #0808133b,
+    #0808133a,
+    #08081300,
+    #08081300,
+    #08081300
+  );
+  background-size: 40vmin 40vmin;
+  background-repeat: no-repeat;
+  background-position: top -40vmin right -40vmin;
+  animation: move1 40s 1s 1 both;
 }
 .title {
   font-family: "Lato", sans-serif;
   font-size: 9vmin;
   text-transform: uppercase;
   color: var(--off-color);
-  letter-spacing: 1.6vw;
+  letter-spacing: 1.7vw;
   cursor: pointer;
 }
 
@@ -210,4 +229,4 @@ body {
   text-decoration: none;
 }
 
-/* June 1 2022 Rami Al-Saadi Copyrights Reserved */
+/* June 1 2022 - June 2 2022 * Rami Al-Saadi * All rights Reserved. */
