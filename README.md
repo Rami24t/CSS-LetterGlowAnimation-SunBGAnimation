@@ -15,3 +15,5 @@ Live Version: https://rami24t.github.io/CSS-LetterGlowAnimation-SunBGAnimation/
 - Use the 'Lato' google font
 
 - Add link to my git-hub
+
+- Add BG Art/Animation
