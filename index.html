@@ -46,5 +46,17 @@
         <a href="https://github.com/Rami24t" target="_blank">Rami Al-Saadi</a>
       </div>
     </footer>
+    <script type="text/javascript">
+      let containerBefore = document.createElement("style");
+      containerBefore.innerHTML =
+        '.container::before {opacity: 0.2; background-image: url("https://source.unsplash.com/random/' +
+        (window.innerWidth * 2 - 1) +
+        "x" +
+        window.innerHeight * 1.8 +
+        "?night+sky" +
+        Math.random() +
+        '");}';
+      document.head.appendChild(containerBefore);
+    </script>
   </body>
 </html>
