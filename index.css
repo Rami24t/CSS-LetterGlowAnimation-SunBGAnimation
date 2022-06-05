@@ -24,10 +24,10 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  opacity: 0.15;
+  opacity: 0.9;
+  filter: brightness(0.2);
   background-repeat: no-repeat;
   z-index: -99;
-  background-size: 420vw 360vh;
   background-position: top 100% right 100%;
   animation: 40s move2 3s 1 both;
 }
@@ -48,8 +48,8 @@ body {
     #06060e7e,
     #06060e71,
     #08081357,
-    #0808133b,
-    #0808133a,
+    #0808131c,
+    #08081317,
     #08081300,
     #08081300,
     #08081300
@@ -235,4 +235,4 @@ body {
   }
 }
 
-/* June 1 2022 - June 2 2022 * Rami Al-Saadi * All rights Reserved. */
+/* 2022 * Rami Al-Saadi * All rights Reserved. */
