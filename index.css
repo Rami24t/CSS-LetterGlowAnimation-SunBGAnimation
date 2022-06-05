@@ -13,6 +13,7 @@ body {
   background-color: #080813;
   user-select: none;
   width: 100%;
+  filter: blur(1px);
 }
 
 .container::before {
@@ -23,16 +24,17 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  opacity: 0.1;
-  background-image: url(./images/jake-weirick-Q_RBVFFXR_g-unsplash.jpg);
-  background-image: url("https://source.unsplash.com/2000x2000/?night sky");
-  background-position: cover;
-  background-repeat: repeat;
-  filter: blur(2px);
+  opacity: 0.15;
+  background-repeat: no-repeat;
   z-index: -99;
-  background-size: 200% 200%;
-  background-position: bottom -100vh left -100vw;
-  animation: move1 40s alternate-reverse 1 both;
+  background-size: 420vw 360vh;
+  background-position: top 100% right 100%;
+  animation: 40s move2 3s 1 both;
+}
+@keyframes move2 {
+  to {
+    background-position: top 0% right 0%;
+  }
 }
 
 .container {
@@ -55,7 +57,7 @@ body {
   background-size: 40vmin 40vmin;
   background-repeat: no-repeat;
   background-position: top -40vmin right -40vmin;
-  animation: move1 35s 19s 1 both;
+  animation: move1 35s 5s 1 both;
 }
 .title {
   font-family: "Lato", sans-serif;
